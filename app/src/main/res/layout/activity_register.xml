@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--&lt;!&ndash; Settings, should always be in the overflow &ndash;&gt;-->
+    <!--<item android:id="@+id/action_settings"-->
+        <!--android:title="@string/action_settings"-->
+        <!--app:showAsAction="never"/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:padding="5dp"-->
+        <!--android:text="Add a Profile Picture"-->
+        <!--android:textSize="12sp"-->
+        <!--tools:layout_margin="10dp" />-->
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@android:style/DeviceDefault.Light.ButtonBar"
+        app:popupTheme="?attr/actionButtonStyle" />
+
+    <!-- "Mark Favorite", should appear as action button if possible -->
+    <!--<item-->
+    <!--android:id="@+id/action_favorite"-->
+        <!--android:drawable="@android:color/black"-->
+    <!--android:title="Test"-->
+    <!--app:showAsAction="always"/>-->
+
+    <!--&lt;!&ndash; Settings, should always be in the overflow &ndash;&gt;-->
+    <!--<item android:id="@+id/action_settings"-->
+    <!--android:title="@string/action_settings"-->
+    <!--app:showAsAction="never"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <!--
+        <ImageView
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/profile_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="60dp"
+            android:padding="20dp"
+            app:srcCompat="@mipmap/ic_launcher" /> -->
+
+        <ImageView
+            android:id="@+id/open_camera_button"
+            android:layout_width="112dp"
+            android:layout_height="111dp"
+            android:layout_weight="0"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <Button
+            android:id="@+id/change_profile_pic_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="45dp"
+            android:padding="20dp"
+            android:text="@string/change_image_button" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/register_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Name" />
+
+    <RadioGroup
+        android:id="@+id/radioGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioGenderF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/register_gender_f" />
+
+        <RadioButton
+            android:id="@+id/radioGenderM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_gender_m" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/register_email_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/register_password_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Password" />
+
+    <EditText
+        android:id="@+id/register_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="Phone" />
+
+    <EditText
+        android:id="@+id/register_major"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Major" />
+
+    <EditText
+        android:id="@+id/register_class_year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Dartmouth Class Year"/>
+
+    <!--
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onSaveClicked"
+        android:capitalize="characters"
+        android:text="Register" />
+        -->
+
+</LinearLayout>
+
+
+
+
+<!--<menu xmlns:android="http://schemas.android.com/apk/res/android" >-->
+
+<!--&lt;!&ndash; "Mark Favorite", should appear as action button if possible &ndash;&gt;-->
+<!--<item-->
+    <!--android:id="@+id/action_favorite"-->
+    <!--android:icon="@drawable/ic_favorite_black_48dp"-->
+    <!--android:title="@string/action_favorite"-->
+    <!--app:showAsAction="ifRoom"/>-->
+
+<!--&lt;!&ndash; Settings, should always be in the overflow &ndash;&gt;-->
+<!--<item android:id="@+id/action_settings"-->
+    <!--android:title="@string/action_settings"-->
+    <!--app:showAsAction="never"/>-->
+
+<!--</menu>-->

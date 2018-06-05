@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<menu xmlns:android="http://schemas.android.com/apk/res/android">-->
+
+<!--</menu>-->
+
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container">
+<item
+    android:id="@+id/navigation_start"
+    android:icon="@drawable/ic_play_navigation_black_24dp"
+    android:title="@string/title_start"
+    app:showAsAction="never"/>
+<item
+    android:id="@+id/navigation_history"
+    android:icon="@drawable/ic_history_black_24dp"
+    android:title="@string/title_history"
+    app:showAsAction="never"/>
+
+</menu>
+
